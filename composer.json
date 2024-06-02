@@ -1,0 +1,33 @@
+{
+  "name": "abianic/laravel-installer",
+  "description": "Laravel web installer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cristhian García",
+      "email": "escipion25@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Abianic\\LaravelInstaller\\": "src/"
+    },
+    "files": [
+      "src/Helpers/functions.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Abianic\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "stable"
+}
